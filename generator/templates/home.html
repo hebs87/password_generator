@@ -9,6 +9,9 @@
 <body>
 
     <h1>Password Generator</h1>
+    <a href="{% url 'about' %}">About</a>
+    <br>
+    <br>
     <!-- Form to generate password -->
     <form action="{% url 'password' %}">
         <select name="length">

@@ -23,4 +23,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     # Password page view
     path('password/', views.password, name='password'),
+    # About page view
+    path('about/', views.about, name='about'),
 ]

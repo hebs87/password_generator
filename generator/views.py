@@ -4,10 +4,26 @@ import random
 
 # Create your views here.
 def home(request):
+    """
+    Renders the home.html template
+    """
     return render(request, 'home.html')
 
 
+def about(request):
+    """
+    Renders the about.html template
+    """
+    return render(request, 'about.html')
+
+
 def password(request):
+    """
+    Renders the password.html template and generates
+    a random password for the user based on their
+    selection choices from the home.html form
+    """
+
     # Create a list of the letters - takes each
     # letter and puts them into individual strings
     characters = list('abcdefghijklmnopqrstuvwxyz')
