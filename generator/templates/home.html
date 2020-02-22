@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Password Generator | Home</title>
 </head>
 <body>
 
-    <h1>Hello World!</h1>
-    <p>Message: {{ message }}</p>
+    <h1>Password Generator</h1>
+    <!-- Form to generate password -->
+    <form action="{% url 'password' %}">
+        <select name="length">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <input type="submit" value="Generate Password">
+    </form>
 
 </body>
 </html>
